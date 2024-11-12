@@ -27,7 +27,7 @@ namespace Service
         {
             List<Subscriber> _lgns = subscriberRepository.GetAll().ToList() ;
             var _lgn = _lgns.Where(l => l.Email == email).FirstOrDefault();
-
+            // test 
             return _lgn;
         }
 
