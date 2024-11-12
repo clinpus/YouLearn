@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row login-container">
+        <div class="col-12 col-md-6 pl-0">
+            <img  src="assets/register.png" alt="" />
+        </div>
+        <div class="col-12 col-md-6" > <!-- class="login-card"  -->
+            <div class="login-card">
+                <h1 class="font-20 font-weight-bold">Subscribe account</h1>
+
+                <div class=" form-group">
+                    <label class="input-label" for="name">Name:</label>
+                    <input [(ngModel)]="Name"  (input)="OnChangeForm($event)" class="form-control"  aria-describedby="nameHelp">
+                </div>
+
+                <div class=" form-group">
+                    <label class="input-label" for="email">Email:</label>
+                    <input [(ngModel)]="Email"  (input)="OnChangeForm($event)" class="form-control"  aria-describedby="emailHelp">
+                </div>
+
+                <div class="form-group">
+                    <label class="input-label" for="password">Password:</label>
+                    <input [(ngModel)]="Password" (input)="OnChangeForm($event)" type="password" class="form-control" aria-describedby="passwordHelp">
+                </div>
+
+                <button (click)="subscribe()" class="btn btn-primary btn-block mt-2" [disabled]="!IsActivatedSubscribeBTN">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</div>

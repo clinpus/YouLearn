@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row login-container">
+        <div class="col-12 col-md-6 pl-0">
+            <img  src="assets/login.png" alt="" />
+        </div>
+        <div class="col-12 col-md-6" >
+            <div class="login-card">
+                <h1 class="font-20 font-weight-bold">Log in to your account</h1>
+                <input type="hidden" name="_token" value="C2otqJCZiWeV9bGBHIB91yf7qZqsyFcAGuPuPMnp">
+
+                <input type="hidden" name="type" value="email">
+
+                <div class="form-group">
+                    <label class="input-label" for="email">Email:</label>
+                    <input [(ngModel)]="email"  class="form-control "  aria-describedby="emailHelp">
+                </div>
+
+                <div class="form-group">
+                    <label class="input-label" for="password">Password:</label>
+                    <input [(ngModel)]="password" type="password" class="form-control " id="password" aria-describedby="passwordHelp">
+                </div>
+                <button (click)="login()" class="btn btn-primary btn-block mt-2">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
